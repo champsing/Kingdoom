@@ -1,0 +1,2 @@
+tellraw @a[tag=Rspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"丟一組綠寶石給藍隊玩家"}]
+tellraw @a[tag=Bspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"丟一組綠寶石給紅隊玩家"}]

@@ -1,0 +1,2 @@
+execute if score 十分鐘寶石 list2 matches 0 if entity @s[tag=Rking] as @e[tag=Rtreasure] at @s run function gem:red/treasure/glowing
+execute if score 十分鐘寶石 list2 matches 0 if entity @s[tag=Bking] as @e[tag=Btreasure] at @s run function gem:blue/treasure/glowing

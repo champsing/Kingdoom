@@ -1,0 +1,6 @@
+tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"紅隊","color":"red"},{"text":"使用了"},{"text":"異型巫術","color":"gold"}]
+execute at @e[tag=middle] run summon creeper ~ ~ ~ {DeathLootTable:"minecraft:empty",CustomName:'{"text":"閃電異型"}',CustomNameVisible:1,powered:1,Attributes:[{Name:"generic.movement_speed",Base:0.3d},{Name:"generic.follow_range",Base:100},{Name:"generic.knockback_resistance",Base:0}],PersistenceRequired:1,Glowing:1b}
+execute at @e[tag=middle] run summon creeper ~ ~ ~ {DeathLootTable:"minecraft:empty",CustomName:'{"text":"閃電異型"}',CustomNameVisible:1,powered:1,Attributes:[{Name:"generic.movement_speed",Base:0.3d},{Name:"generic.follow_range",Base:100},{Name:"generic.knockback_resistance",Base:0}],PersistenceRequired:1,Glowing:1b}
+execute at @e[tag=middle] run summon creeper ~ ~ ~ {DeathLootTable:"minecraft:empty",CustomName:'{"text":"閃電異型"}',CustomNameVisible:1,powered:1,Attributes:[{Name:"generic.movement_speed",Base:0.3d},{Name:"generic.follow_range",Base:100},{Name:"generic.knockback_resistance",Base:0}],PersistenceRequired:1,Glowing:1b}
+scoreboard players remove 紅隊靈魂 list 10
+tag @s add sorcery_success
