@@ -1,0 +1,9 @@
+item replace block ~ ~1 ~ container.9 with air
+item replace block ~ ~1 ~ container.10 with air
+item replace block ~ ~1 ~ container.11 with air
+item replace block ~ ~1 ~ container.12 with air
+item replace block ~ ~1 ~ container.13 with air
+item replace block ~ ~1 ~ container.14 with air
+item replace block ~ ~1 ~ container.15 with air
+item replace block ~ ~1 ~ container.16 with air
+item replace block ~ ~1 ~ container.17 with air
