@@ -1,0 +1,24 @@
+{
+	"criteria": {
+		"attack": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"dealt": {
+						"min": 4
+					}
+				},
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"nbt": "{ForgeAttack:1}"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "forge:attack"
+	}
+}
