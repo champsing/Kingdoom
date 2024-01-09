@@ -1,0 +1,10 @@
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=1..10},limit=1] run function favorability:add/blue/10
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=11..20},limit=1] run function favorability:add/blue/20
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=21..30},limit=1] run function favorability:add/blue/30
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=31..40},limit=1] run function favorability:add/blue/40
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=41..50},limit=1] run function favorability:add/blue/50
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=51..60},limit=1] run function favorability:add/blue/60
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=61..70},limit=1] run function favorability:add/blue/70
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=71..80},limit=1] run function favorability:add/blue/80
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=81..90},limit=1] run function favorability:add/blue/90
+execute if entity @a[tag=fav_add,tag=!fav_add_self,scores={fav_Bnum=91..100},limit=1] run function favorability:add/blue/100
