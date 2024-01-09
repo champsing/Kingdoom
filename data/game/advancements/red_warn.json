@@ -1,0 +1,25 @@
+{
+    "criteria":
+    {
+        "red_warn":
+        {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions":
+            {
+                "player":
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate":
+                    {
+                      "team": "red"
+                    }
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "game:warn/red"
+    }
+}

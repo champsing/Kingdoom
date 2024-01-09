@@ -1,0 +1,25 @@
+{
+    "criteria":
+    {
+        "blue_warn":
+        {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions":
+            {
+                "player":
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate":
+                    {
+                      "team": "blue"
+                    }
+                }
+            }
+        }
+    },
+    "rewards":
+    {
+        "function": "game:warn/blue"
+    }
+}
