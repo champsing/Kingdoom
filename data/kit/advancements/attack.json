@@ -1,0 +1,13 @@
+{
+	"criteria": {
+        "attack": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minecraft:diamond_sword"
+            }
+        }
+    },
+	"rewards": {
+		"function": "kit:attack/use"
+	}
+}

@@ -1,0 +1,8 @@
+execute if score @s Akit matches 1 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-凍結"}',Lore:['{"text":"§7周圍5格內玩家獲得緩速 IV (0:07)"}','{"text":"§7冷卻時間: 150秒"}']}}
+execute if score @s Akit matches 2 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-咆哮"}',Lore:['{"text":"§7周圍5格內玩家獲得中毒 IV (0:07)"}','{"text":"§7冷卻時間: 150秒"}']}}
+execute if score @s Akit matches 3 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-燃獄"}',Lore:['{"text":"§7腳下生成火焰 (0:15)"}','{"text":"§7冷卻時間: 180秒"}']}}
+execute if score @s Akit matches 4 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-狂暴"}',Lore:['{"text":"§7獲得力量 II和發光 (0:08)"}','{"text":"§7冷卻時間: 180秒"}']}}
+execute if score @s Akit matches 5 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-飛拳"}',Lore:['{"text":"§7周圍5格內玩家擊飛上天"}','{"text":"§7冷卻時間: 180秒"}']}}
+execute if score @s Akit matches 6 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-標記"}',Lore:['{"text":"§7視角自動瞄準最靠近的敵人 (0:07)"}','{"text":"§7冷卻時間: 180秒"}']}}
+execute if score @s Akit matches 7 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-狙擊"}',Lore:['{"text":"§7射出無重力箭矢 (0:09)"}','{"text":"§7冷卻時間: 180秒"}']}}
+execute if score @s Akit matches 8 run give @s knowledge_book{Recipes:["diamond_sword"],display:{Name:'{"text":"§f攻擊型技能-爆破"}',Lore:['{"text":"§7召喚一隻瞬間爆炸的苦力怕"}','{"text":"§7冷卻時間: 210秒"}']}}
