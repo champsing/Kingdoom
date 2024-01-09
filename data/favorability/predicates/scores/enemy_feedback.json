@@ -1,0 +1,28 @@
+{
+	"condition": "minecraft:any_of",
+	"terms":
+	[
+		{
+			"condition": "minecraft:entity_scores",
+			"entity": "this",
+			"scores":
+			{
+				"enemy_feedback_red":
+				{
+					"min": 1
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_scores",
+			"entity": "this",
+			"scores":
+			{
+				"enemy_feedback_blue":
+				{
+					"min": 1
+				}
+			}
+		}
+	]
+}

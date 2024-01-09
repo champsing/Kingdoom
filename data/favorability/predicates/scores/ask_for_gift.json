@@ -1,0 +1,28 @@
+{
+	"condition": "minecraft:any_of",
+	"terms":
+	[
+		{
+			"condition": "minecraft:entity_scores",
+			"entity": "this",
+			"scores":
+			{
+				"gift_red":
+				{
+					"min": 1
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_scores",
+			"entity": "this",
+			"scores":
+			{
+				"gift_blue":
+				{
+					"min": 1
+				}
+			}
+		}
+	]
+}

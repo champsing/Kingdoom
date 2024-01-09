@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "event03":{
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:player",
+                            "nbt": "{Tags:[\"event03\"]}"
+                        }
+                    }
+                }
+            }
+        }
+	},
+	"rewards": {
+		"function": "event:success/03"
+	}
+}
