@@ -1,2 +1,0 @@
-tellraw @a[tag=Rspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"用手榴彈炸死兩個紅隊玩家"}]
-tellraw @a[tag=Bspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"用手榴彈炸死兩個藍隊玩家"}]

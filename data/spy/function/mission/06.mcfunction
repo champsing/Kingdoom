@@ -1,0 +1,2 @@
+tellraw @a[tag=Rspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"用盜竊技能偷取紅隊玩家的錢三次"}]
+tellraw @a[tag=Bspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"用盜竊技能偷取藍隊玩家的錢三次"}]

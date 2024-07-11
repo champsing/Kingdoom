@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": [
+			"minecraft:cobblestone",
+			"minecraft:anvil",
+			"minecraft:grindstone",
+			"minecraft:lava",
+			"minecraft:water",
+			"minecraft:bubble_column",
+			"minecraft:air",
+			"minecraft:bedrock",
+			"minecraft:cave_air",
+			"minecraft:void_air"
+	]
+}

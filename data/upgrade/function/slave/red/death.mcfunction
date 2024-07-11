@@ -1,0 +1,2 @@
+execute store result score 紅隊奴隸 team_upgrade if entity @e[tag=Rslave]
+tellraw @a[team=red] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"奴隸","color":"gold"},{"text":"被殺死了, 奴隸目前等級為: "},{"score":{"name":"紅隊奴隸","objective":"team_upgrade"},"color":"gold"}]

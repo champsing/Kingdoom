@@ -1,0 +1,3 @@
+summon shulker ~ ~ ~ {PortalCooldown:600,Tags:["Rtreasure_shulker","treasure_shulker"],Team:"red",Glowing:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,DeathLootTable:"minecraft:empty",PersistenceRequired:1b,NoAI:1b,AttachFace:0b,active_effects:[{id:"minecraft:invisibility",amplifier:0b,duration:72000,show_particles:0b}]}
+tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"紅隊寶石","color":"red"},{"text":"發光30秒"}]
+tag @a[tag=Rking] add treasure_health

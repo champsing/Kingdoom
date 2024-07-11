@@ -1,0 +1,13 @@
+{
+	"criteria": {
+        "support": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minecraft:bow"
+            }
+        }
+    },
+	"rewards": {
+		"function": "kit:support/use"
+	}
+}

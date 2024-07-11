@@ -1,0 +1,2 @@
+tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"亡國之戰 II ","color":"gold"},{"text":"指令包安裝成功"}]
+execute unless entity @e[tag=lobby] run tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"點擊 "},{"text":"此處","color":"light_purple","clickEvent":{"action":"run_command","value":"/function start:generate"},"hoverEvent":{"action":"show_text","contents":"點此在原地生成大廳"}},{"text":" 生成大廳, 建議在空曠區域生成"}]

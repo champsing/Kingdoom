@@ -1,2 +1,0 @@
-execute store result score 紅隊守衛 team_upgrade if entity @e[tag=Rguardian]
-tellraw @a[team=red] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"守衛","color":"gold"},{"text":"被殺死了, 守衛目前等級為: "},{"score":{"name":"紅隊守衛","objective":"team_upgrade"},"color":"gold"}]

@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": [
+                                "minecraft:armor_stand"
+                            ],
+                            "components": {
+                                "minecraft:custom_name": "{\"text\":\"§f地雷\"}",
+                                "minecraft:lore": [
+                                    "{\"text\":\"§7對著地上點擊右鍵放置\"}"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "bomb:landmine/stamina"
+    }
+}

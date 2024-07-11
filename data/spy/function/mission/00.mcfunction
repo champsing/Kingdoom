@@ -1,0 +1,2 @@
+tellraw @a[tag=Rspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"連續待在紅隊國王周圍五格60秒"}]
+tellraw @a[tag=Bspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"連續待在藍隊國王周圍五格60秒"}]

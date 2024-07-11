@@ -1,0 +1,3 @@
+execute if entity @s[nbt={item:{components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}}] run summon area_effect_cloud ~ ~ ~ {Particle:"entity_effect",Radius:3f,RadiusPerTick:-0.01f,RadiusOnUse:-0.3f,Duration:600,potion_contents:{potion:"minecraft:poison"}}
+execute if entity @s[nbt={item:{components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}}] run summon area_effect_cloud ~ ~ ~ {Particle:"entity_effect",Radius:3f,RadiusPerTick:-0.01f,RadiusOnUse:-0.3f,Duration:600,potion_contents:{potion:"minecraft:harming"}}
+kill @s

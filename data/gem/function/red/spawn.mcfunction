@@ -1,0 +1,3 @@
+summon item ~ ~ ~ {Tags:["Rgem"],Age:-32768,CustomNameVisible:1b,Invulnerable:1b,Glowing:1b,PickupDelay:50,CustomName:'{"text":"紅隊寶石","color":"red"}',Item:{id:"minecraft:diamond",count:1b,components:{"minecraft:repair_cost":100,"minecraft:custom_name":'{"text":"紅隊寶石","color":"red","italic":false}',"minecraft:custom_data":{team:"red"}}}}
+team join red @e[type=item,tag=Rgem,distance=..1]
+tag @s remove Rgem_player

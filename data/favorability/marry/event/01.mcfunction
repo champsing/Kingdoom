@@ -1,4 +1,0 @@
-execute as @a[tag=new_marry,team=red] at @s run summon zombie ~ ~ ~ {DeathLootTable:"minecraft:empty",Silent:1b,Team:"red",PersistenceRequired:1b,Health:40f,IsBaby:1b,CustomName:'{"text":"小屁孩"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F],Attributes:[{Name:"generic.max_health",Base:40},{Name:"generic.attack_damage",Base:5}]}
-execute as @a[tag=new_marry,team=blue] at @s run summon zombie ~ ~ ~ {DeathLootTable:"minecraft:empty",Silent:1b,Team:"blue",PersistenceRequired:1b,Health:40f,IsBaby:1b,CustomName:'{"text":"小屁孩"}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b}],ArmorDropChances:[0.0F,0.0F,0.0F,0.0F],Attributes:[{Name:"generic.max_health",Base:40},{Name:"generic.attack_damage",Base:5}]}
-
-tellraw @a ["§6§l>> ","恭喜",{"selector":"@a[tag=new_marry]","separator":{"text":"和"}},"§6結婚",", 兩人生出","§6小孩"]

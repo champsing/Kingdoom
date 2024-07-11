@@ -1,2 +1,0 @@
-tellraw @a[tag=Rspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"躲過第一次投票"}]
-tellraw @a[tag=Bspy] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"任務是: ","color":"gold"},{"text":"躲過第一次投票"}]
