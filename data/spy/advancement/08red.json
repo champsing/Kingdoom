@@ -1,15 +1,15 @@
 {
-    "criteria": {
-        "red_guardian": {
-            "trigger": "minecraft:player_killed_entity",
-            "conditions": {
-            "entity": {
-                "type": "minecraft:skeleton",
-                "nbt": "{Tags:[\"Rguardian\"]}"
-                }
-            }
-        }
-    },
+	"criteria": {
+		"red_guardian": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+			"entity": {
+				"type": "minecraft:skeleton",
+				"nbt": "{Tags:[\"Rguardian\"]}"
+				}
+			}
+		}
+	},
 	"rewards": {
 		"function": "spy:red/mission/08"
 	}

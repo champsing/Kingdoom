@@ -1,6 +1,6 @@
 {
 	"replace": false,
-    "values": [
+	"values": [
 			"minecraft:wooden_sword",
 			"minecraft:stone_sword",
 			"minecraft:iron_sword",
@@ -9,5 +9,5 @@
 			"minecraft:stone_axe",
 			"minecraft:iron_axe",
 			"minecraft:diamond_axe"
-    ]
+	]
 }

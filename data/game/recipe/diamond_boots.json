@@ -1,15 +1,11 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:diamond_boots"
-        },
-        {
-            "item": "minecraft:diamond_boots"
-        }
-    ],
-    "result": {
-        "id": "minecraft:structure_void",
-        "count": 1
-    }
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"minecraft:diamond_boots",
+		"minecraft:diamond_boots"
+	],
+	"result": {
+		"id": "minecraft:structure_void",
+		"count": 1
+	}
 }

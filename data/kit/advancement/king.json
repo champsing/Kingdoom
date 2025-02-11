@@ -1,12 +1,12 @@
 {
 	"criteria": {
-        "king": {
-            "trigger": "minecraft:recipe_unlocked",
-            "conditions": {
-                "recipe": "minecraft:golden_helmet"
-            }
-        }
-    },
+		"king": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "minecraft:golden_helmet"
+			}
+		}
+	},
 	"rewards": {
 		"function": "kit:king/use"
 	}

@@ -1,5 +1,5 @@
 setblock ~ ~ ~ diamond_block
-summon marker ~ ~ ~ {Tags:["Rtreasure"],NoGravity:1b,Silent:1b,Invulnerable:1b,}
+summon marker ~ ~ ~ {Tags:["Rtreasure"],NoGravity:1b,Silent:1b,Invulnerable:1b}
 kill @s
 
 tag @a[team=red,tag=Rking] remove Rdrop

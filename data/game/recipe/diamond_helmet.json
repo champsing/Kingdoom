@@ -1,15 +1,11 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:diamond_helmet"
-        },
-        {
-            "item": "minecraft:diamond_helmet"
-        }
-    ],
-    "result": {
-        "id": "minecraft:structure_void",
-        "count": 1
-    }
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"minecraft:diamond_helmet",
+		"minecraft:diamond_helmet"
+	],
+	"result": {
+		"id": "minecraft:structure_void",
+		"count": 1
+	}
 }

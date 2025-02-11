@@ -1,6 +1,6 @@
 {
 	"replace": false,
-    "values": [
+	"values": [
 			"minecraft:diamond_chestplate",
 			"minecraft:diamond_sword",
 			"minecraft:diamond_axe",
@@ -9,5 +9,5 @@
 			"minecraft:armor_stand",
 			"minecraft:chest",
 			"minecraft:shield"
-    ]
+	]
 }

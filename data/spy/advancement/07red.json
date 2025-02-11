@@ -1,15 +1,15 @@
 {
-    "criteria": {
-        "red_slave": {
-            "trigger": "minecraft:player_killed_entity",
-            "conditions": {
-            "entity": {
-                "type": "minecraft:skeleton",
-                "nbt": "{Tags:[\"Rslave\"]}"
-                }
-            }
-        }
-    },
+	"criteria": {
+		"red_slave": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+			"entity": {
+				"type": "minecraft:skeleton",
+				"nbt": "{Tags:[\"Rslave\"]}"
+				}
+			}
+		}
+	},
 	"rewards": {
 		"function": "spy:red/mission/07"
 	}

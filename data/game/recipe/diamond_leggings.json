@@ -1,15 +1,11 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:diamond_leggings"
-        },
-        {
-            "item": "minecraft:diamond_leggings"
-        }
-    ],
-    "result": {
-        "id": "minecraft:structure_void",
-        "count": 1
-    }
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"minecraft:diamond_leggings",
+		"minecraft:diamond_leggings"
+	],
+	"result": {
+		"id": "minecraft:structure_void",
+		"count": 1
+	}
 }

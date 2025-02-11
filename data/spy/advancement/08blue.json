@@ -1,15 +1,15 @@
 {
-    "criteria": {
-        "blue_guardian": {
-            "trigger": "minecraft:player_killed_entity",
-            "conditions": {
-            "entity": {
-                "type": "minecraft:skeleton",
-                "nbt": "{Tags:[\"Bguardian\"]}"
-                }
-            }
-        }
-    },
+	"criteria": {
+		"blue_guardian": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+			"entity": {
+				"type": "minecraft:skeleton",
+				"nbt": "{Tags:[\"Bguardian\"]}"
+				}
+			}
+		}
+	},
 	"rewards": {
 		"function": "spy:blue/mission/08"
 	}

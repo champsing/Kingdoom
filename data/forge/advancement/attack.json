@@ -1,26 +1,26 @@
 {
-    "criteria": {
-        "attack": {
-            "trigger": "minecraft:player_hurt_entity",
-            "conditions": {
-                "player": {
-                    "equipment": {
-                        "mainhand": {
-                            "predicates": {
-                                "minecraft:custom_data": "{ForgeAttack:1}"
-                            }
-                        }
-                    }
-                },
-                "damage": {
-                    "dealt": {
-                        "min": 4
-                    }
-                }
-            }
-        }
-    },
-    "rewards": {
-        "function": "forge:attack"
-    }
+	"criteria": {
+		"attack": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"predicates": {
+								"minecraft:custom_data": "{ForgeAttack:1}"
+							}
+						}
+					}
+				},
+				"damage": {
+					"dealt": {
+						"min": 4
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "forge:attack"
+	}
 }
