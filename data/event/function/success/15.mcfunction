@@ -5,7 +5,6 @@ tag @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:5b}]}] add event15_
 tag @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:6b}]}] add event15_beast
 tag @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:7b}]}] add event15_warhammer
 
-tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:0b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"始祖巨人","color":"gold"},{"text":"的力量"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:1b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"進擊的巨人","color":"gold"},{"text":"的力量"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:2b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"盔甲巨人","color":"gold"},{"text":"的力量"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:3b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"車力巨人","color":"gold"},{"text":"的力量"}]
@@ -14,8 +13,8 @@ tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:5b}]}] ["",{"te
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:6b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"野獸巨人","color":"gold"},{"text":"的力量"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:7b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"戰錘巨人","color":"gold"},{"text":"的力量"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:8b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"女巨人","color":"gold"},{"text":"的力量"}]
+tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:9b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已繼承"},{"text":"始祖巨人","color":"gold"},{"text":"的力量"}]
 
-tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:0b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"始祖巨人","color":"gold"},{"text":": 獲得村莊英雄效果 (1:30)"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:1b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"進擊的巨人","color":"gold"},{"text":": 獲得力量 II效果 (1:30)"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:2b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"盔甲巨人","color":"gold"},{"text":": 獲得抗性 II和生命值提升 II效果 (1:30)"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:3b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"車力巨人","color":"gold"},{"text":": 獲得加速 I效果, 吸收半徑5格內的物品 (1:30)"}]
@@ -24,6 +23,7 @@ tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:5b}]}] ["",{"te
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:6b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"野獸巨人","color":"gold"},{"text":": 獲得跳躍提升 I效果, 提高手榴彈的爆炸威力 (1:30)"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:7b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"戰錘巨人","color":"gold"},{"text":": 獲得抗性 I效果, 硬化周圍的鵝卵石 (1:30)"}]
 tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:8b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"女巨人","color":"gold"},{"text":": 獲得加速 I, 抗性 I和挖掘加速 I效果 (1:30)"}]
+tellraw @s[nbt={active_effects:[{id:"minecraft:unluck",amplifier:9b}]}] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"始祖巨人","color":"gold"},{"text":": 獲得村莊英雄效果 (1:30)"}]
 
 tag @s[tag=!event15_warhammer,tag=!event15_beast,tag=!event15_colossal,tag=!event15_cart] remove event15
 

@@ -18,14 +18,14 @@ clear @s written_book[custom_data~{book:"favorability"}]
 execute if entity @s[team=red] run function death:red
 execute if entity @s[team=blue] run function death:blue
 
-execute if score 墓碑噴裝 menu matches 0 if data entity @s Inventory[0] run function inventory:grave/drop
-execute if score 隨機噴裝 menu matches 0 run function inventory:random/drop
+execute if score 噴裝模式 menu matches 0 if data entity @s Inventory[0] run function inventory:grave/drop
+execute if score 噴裝模式 menu matches 1 run function inventory:random/drop
 
 execute if entity @s[tag=wanted] run function game:wanted_success
 
-execute if score 護送模式 menu matches 0 run function death:escort
-execute if score 捍衛模式 menu matches 0 run function death:defend
-execute if score 尋寶模式 menu matches 0 run function death:treasure
+execute if score 遊戲模式 menu matches 0 run function death:escort
+execute if score 遊戲模式 menu matches 1 run function death:defend
+execute if score 遊戲模式 menu matches 2 run function death:treasure
 
 execute if entity @s[tag=Rgem_player] run function gem:red/spawn
 execute if entity @s[tag=Bgem_player] run function gem:blue/spawn

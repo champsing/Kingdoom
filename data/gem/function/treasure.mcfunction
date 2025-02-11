@@ -2,7 +2,7 @@ execute as @e[tag=Rtreasure_egg] at @s run function gem:red/treasure/place
 execute as @e[tag=Btreasure_egg] at @s run function gem:blue/treasure/place
 
 clear @a[tag=!Rking,tag=!Bking] allay_spawn_egg
-kill @e[type=item,nbt={Item:{id:"minecraft:allay_spawn_egg"}}]
+execute as @e[type=item] if items entity @s contents allay_spawn_egg run kill
 execute as @a[tag=Rking] store result score @s gem_place run clear @s allay_spawn_egg 0
 execute as @a[tag=Bking] store result score @s gem_place run clear @s allay_spawn_egg 0
 execute as @a[tag=Rking,tag=Rdrop,scores={gem_place=0}] at @s run function gem:red/treasure/destroy

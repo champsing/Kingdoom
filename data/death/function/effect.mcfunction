@@ -7,5 +7,5 @@ execute unless score 十分鐘寶石 list2 matches 0 run effect give @s[team=red
 execute unless score 十分鐘寶石 list2 matches 0 run effect give @s[team=blue,tag=Bking] health_boost infinite 4 true
 effect give @s[tag=treasure_health] health_boost infinite 4 true
 tag @s[tag=treasure_health] remove treasure_health
-tp @s @e[tag=spawn,distance=..1,limit=1,sort=nearest]
+tp @s @n[tag=spawn,distance=..1,limit=1]
 scoreboard players reset @s death

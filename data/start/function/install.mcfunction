@@ -49,11 +49,14 @@ team join gold 第二天限制分數
 team join gold 玩家人數
 team join gold 間諜模式
 team join gold 好感系統
-team join gold 墓碑噴裝
-team join gold 隨機噴裝
-team join gold 護送模式
-team join gold 捍衛模式
-team join gold 尋寶模式
+team join gold 噴裝模式
+team join gold 遊戲模式
+
+scoreboard players reset 護送模式 menu
+scoreboard players reset 捍衛模式 menu
+scoreboard players reset 尋寶模式 menu
+scoreboard players reset 墓碑噴裝 menu
+scoreboard players reset 隨機噴裝 menu
 
 bossbar add event "事件倒數"
 bossbar add red "紅隊國王血量"
@@ -240,4 +243,4 @@ scoreboard players set 小獎 lottery 10
 scoreboard players set 中獎 lottery 15
 scoreboard players set 大獎 lottery 9
 
-scoreboard players set 更新 list2 9
+scoreboard players set 更新 list2 10

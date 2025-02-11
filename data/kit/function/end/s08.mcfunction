@@ -1,6 +1,6 @@
 #---出竅---
 tag @s add soul_end
-execute as @a[tag=Skit08] if score @s Skit_score = @e[type=area_effect_cloud,tag=soul_end,limit=1,sort=nearest] Skit_score run tag @s add Skit08_end
+execute as @a[tag=Skit08] if score @s Skit_score = @n[type=area_effect_cloud,tag=soul_end,limit=1] Skit_score run tag @s add Skit08_end
 tp @a[tag=Skit08_end] @s
 scoreboard players reset @a[tag=Skit08_end] Skit_score
 gamemode survival @a[tag=Skit08_end]

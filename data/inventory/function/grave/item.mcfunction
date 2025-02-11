@@ -8,5 +8,5 @@ execute as @e[type=item,distance=..1,nbt={Item:{id:"minecraft:netherite_pickaxe"
 
 execute if data entity @s ArmorItems[3].components.minecraft:custom_data.save[0] run function inventory:grave/item
 
-kill @e[tag=grave_name,limit=1,sort=nearest,distance=..0.3]
+kill @n[tag=grave_name,limit=1,distance=..0.3]
 kill @s

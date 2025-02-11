@@ -4,12 +4,12 @@ execute as @a[team=red,tag=!Rgem_player,scores={Rgem=1}] at @s run function gem:
 execute as @a[team=blue,tag=!Bgem_player,scores={Bgem=1}] at @s run function gem:blue/player
 execute as @a[team=red,tag=!Bgem_player,scores={Bgem=1}] at @s run function gem:blue/player
 execute as @a[team=blue,tag=!Rgem_player,scores={Rgem=1}] at @s run function gem:red/player
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{team:"red"}}}},tag=!Rgem] run function gem:red/item
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{team:"blue"}}}},tag=!Bgem] run function gem:blue/item
-execute as @a[tag=Rgem_player] at @s if data entity @s Inventory[{id:"minecraft:diamond",tag:{team:"red"}}] unless data entity @s Inventory[{Slot:103b,id:"minecraft:diamond",tag:{team:"red"}}] run function gem:red/success
-execute as @a[tag=Bgem_player] at @s if data entity @s Inventory[{id:"minecraft:diamond",tag:{team:"blue"}}] unless data entity @s Inventory[{Slot:103b,id:"minecraft:diamond",tag:{team:"blue"}}] run function gem:blue/success
-execute at @e[type=item,nbt={Item:{id:"minecraft:diamond"}}] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air replace hopper
-execute at @e[type=item,nbt={Item:{id:"minecraft:diamond"}}] run kill @e[type=hopper_minecart,distance=..2]
+execute as @e[type=item,tag=!Rgem] if items entity @s contents diamond[custom_data~{team:"red"}] run function gem:red/item
+execute as @e[type=item,tag=!Bgem] if items entity @s contents diamond[custom_data~{team:"blue"}] run function gem:blue/item
+execute as @a[tag=Rgem_player] at @s if items entity @s container.* diamond[custom_data~{team:"red"}] unless items entity @s armor.head diamond[custom_data~{team:"red"}] run function gem:red/success
+execute as @a[tag=Bgem_player] at @s if items entity @s container.* diamond[custom_data~{team:"blue"}] unless items entity @s armor.head diamond[custom_data~{team:"blue"}] run function gem:blue/success
+execute as @e[type=item] at @s if items entity @s contents diamond run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air replace hopper
+execute as @e[type=item] at @s if items entity @s contents diamond run kill @e[type=hopper_minecart,distance=..2]
 execute as @e[type=item,tag=Rgem,limit=1] at @s run function gem:red/disappearing
 execute as @e[type=item,tag=Bgem,limit=1] at @s run function gem:blue/disappearing
 

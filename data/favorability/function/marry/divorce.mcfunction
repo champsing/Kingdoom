@@ -10,7 +10,7 @@ execute as @s[scores={rail_count=1..}] run function favorability:marry/rail
 execute as @a[tag=divorced,scores={rail_count=1..}] run function favorability:marry/rail
 
 clear @a[tag=divorced] gold_nugget
-kill @e[type=item,nbt={Item:{id:"minecraft:gold_nugget"}}]
+execute as @e[type=item] if items entity @s contents gold_nugget run kill
 scoreboard players reset @s marry_pair
 scoreboard players reset @a[tag=divorced] marry_pair
 effect clear @s resistance

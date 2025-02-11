@@ -1,14 +1,16 @@
 {
     "pack": {
-    "pack_format": 41,
+    "pack_format": 48,
     "description": "made by oreki20"
     },
-    "filter": {
-        "block": [
-            {
-                "namespace": "minecraft",
-                "path": "advancements/.*"
-            }
-        ]
-    }
+	"filter":
+	{
+		"block":
+		[
+			{
+				"namespace": "minecraft",
+				"path": "advancement/"
+			}
+		]
+	}
 }

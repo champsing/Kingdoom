@@ -5,9 +5,9 @@ execute if score 遊戲時間 list matches 1.. as @a[team=!spec,tag=!Skit08] at 
 execute as @a[scores={join=1..}] run function game:join
 
 #---寶石---
-execute if score 護送模式 menu matches 0 run function gem:escort
-execute if score 捍衛模式 menu matches 0 run function gem:defend
-execute if score 尋寶模式 menu matches 0 run function gem:treasure
+execute if score 遊戲模式 menu matches 0 run function gem:escort
+execute if score 遊戲模式 menu matches 1 run function gem:defend
+execute if score 遊戲模式 menu matches 2 run function gem:treasure
 
 #---地圖---
 execute at @e[type=armor_stand,tag=enchant] if block ~ ~ ~ air run setblock ~ ~ ~ enchanting_table
@@ -120,7 +120,7 @@ execute as @a[tag=event15] at @s run function event:tick/15
 #---爆破物---
 execute at @e[type=egg] run fill ~1 ~1 ~1 ~-1 ~ ~-1 fire keep
 execute as @e[type=chicken] at @s run tp @s ~ ~-999 ~
-execute at @e[type=snowball] run kill @e[type=area_effect_cloud,tag=grenade_cloud,limit=1,sort=nearest]
+execute at @e[type=snowball] run kill @n[type=area_effect_cloud,tag=grenade_cloud,limit=1]
 execute as @e[type=area_effect_cloud,tag=grenade_cloud] at @s run function bomb:grenade/summon
 execute as @e[type=snowball] at @s run function bomb:grenade/path
 execute as @e[type=item,tag=grenade,nbt={PortalCooldown:0}] at @s run function bomb:grenade/explode
