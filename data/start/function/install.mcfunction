@@ -240,4 +240,4 @@ scoreboard players set 小獎 lottery 10
 scoreboard players set 中獎 lottery 15
 scoreboard players set 大獎 lottery 9
 
-scoreboard players set 更新 list2 8
+scoreboard players set 更新 list2 9
