@@ -5,4 +5,4 @@ data modify storage chest:red Items set from block ~ ~1 ~ Items
 clear @a[team=blue] blaze_rod[custom_data~{lock:"red"}]
 kill @e[type=item,nbt={Item:{id:"minecraft:blaze_rod",components:{"minecraft:custom_data":{lock:"red"}}}}]
 execute as @a[team=red] store success score @s upgrade_lock run clear @s blaze_rod[custom_data~{lock:"red"}] 0
-give @a[team=red,scores={upgrade_lock=0}] blaze_rod[custom_name='{"text":"§c紅隊保險箱鑰匙"}',custom_data={upgrade:2,lock:"red"}]
+give @a[team=red,scores={upgrade_lock=0}] blaze_rod[custom_name={"text":"§c紅隊保險箱鑰匙"},custom_data={upgrade:2,lock:"red"}]

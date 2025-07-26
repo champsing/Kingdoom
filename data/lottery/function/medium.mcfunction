@@ -19,19 +19,19 @@ execute if score @s lottery matches 4 run tellraw @a[tag=lottery] ["",{"text":">
 execute if score @s lottery matches 5 run give @a[tag=lottery] potion[potion_contents={potion:"minecraft:strength"}]
 execute if score @s lottery matches 5 run tellraw @a[tag=lottery] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"恭喜你抽中了"},{"text":"力量藥水","color":"gold"}]
 
-execute if score @s lottery matches 6 run give @a[tag=lottery] golden_apple[lore=['{"text":"§7補充5%體力"}']]
+execute if score @s lottery matches 6 run give @a[tag=lottery] golden_apple[lore=[{"text":"§7補充5%體力"}]]
 execute if score @s lottery matches 6 run tellraw @a[tag=lottery] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"恭喜你抽中了"},{"text":"金蘋果","color":"gold"}]
 
 execute if score @s lottery matches 7 run give @a[tag=lottery] emerald 20
 execute if score @s lottery matches 7 run tellraw @a[tag=lottery] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"恭喜你抽中了"},{"text":"綠寶石","color":"gold"}]
 
-execute if score @s lottery matches 8 run give @a[tag=lottery] snowball[custom_name='{"text":"§f手榴彈"}',lore=['{"text":"§7點擊右鍵扔出"}']]
+execute if score @s lottery matches 8 run give @a[tag=lottery] snowball[custom_name={"text":"§f手榴彈"},lore=[{"text":"§7點擊右鍵扔出"}]]
 execute if score @s lottery matches 8 run tellraw @a[tag=lottery] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"恭喜你抽中了"},{"text":"手榴彈","color":"gold"}]
 
-execute if score @s lottery matches 9 run give @a[tag=lottery] armor_stand[custom_name='{"text":"§f地雷"}',lore=['{"text":"§7對著地上點擊右鍵放置"}'],entity_data={id:"armor_stand",NoGravity:1b,Invulnerable:1b,Invisible:1b,PersistenceRequired:1b,Tags:["landmine_point"]}]
+execute if score @s lottery matches 9 run give @a[tag=lottery] armor_stand[custom_name={"text":"§f地雷"},lore=[{"text":"§7對著地上點擊右鍵放置"}],entity_data={id:"armor_stand",NoGravity:1b,Invulnerable:1b,Invisible:1b,PersistenceRequired:1b,Tags:["landmine_point"]}]
 execute if score @s lottery matches 9 run tellraw @a[tag=lottery] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"恭喜你抽中了"},{"text":"地雷","color":"gold"}]
 
-execute if score @s lottery matches 10 run give @a[tag=lottery] tnt[lore=['{"text":"§7點擊右鍵放置"}']] 2
+execute if score @s lottery matches 10 run give @a[tag=lottery] tnt[lore=[{"text":"§7點擊右鍵放置"}]] 2
 execute if score @s lottery matches 10 run tellraw @a[tag=lottery] ["",{"text":">> ","bold":true,"color":"gold"},{"text":"恭喜你抽中了"},{"text":"TNT","color":"gold"}]
 
 execute if score @s lottery matches 11 run give @a[tag=lottery] flint_and_steel

@@ -3,7 +3,7 @@ title @s title {"text":"你死了","color":"red","bold":true}
 
 #---事件---
 execute store success score @s event_curse run clear @s heart_of_the_sea
-execute if entity @s[scores={event_curse=1}] run summon item ~ ~ ~ {CustomName:'{"text":"噩運水晶"}',CustomNameVisible:1b,Item:{id:"minecraft:heart_of_the_sea",components:{"minecraft:custom_name":'{"text":"噩運水晶","italic":false}'},count:1b},Age:-32768,PickupDelay:50}
+execute if entity @s[scores={event_curse=1}] run summon item ~ ~ ~ {CustomName:{"text":"噩運水晶"},CustomNameVisible:1b,Item:{id:"minecraft:heart_of_the_sea",components:{"minecraft:custom_name":{"text":"噩運水晶","italic":false}},count:1b},Age:-32768,PickupDelay:50}
 execute as @s[tag=event15] run function event:end/15
 
 #---清除---
@@ -34,7 +34,7 @@ execute if entity @s[scores={downgrade=10..}] run function upgrade:downgrade
 function upgrade:give
 execute if entity @s[tag=Rking] run function death:king
 execute if entity @s[tag=Bking] run function death:king
-give @s[tag=vote] written_book[written_book_content={pages:['["",{"text":"\\n\\n\\n\\n\\n      【"},{"text":"發起投票","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger click set 1"}},"\\u00a7r",{"text":"】\\n\\n"}]'],title:"間諜投票發起書",author:"國王"},custom_data={KingBook:1,book:"spy"}]
+give @s[tag=vote] written_book[written_book_content={pages:[["",{"text":"\\n\\n\\n\\n\\n      【"},{"text":"發起投票","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger click set 1"}},"\\u00a7r",{"text":"】\\n\\n"}]],title:"間諜投票發起書",author:"國王"},custom_data={KingBook:1,book:"spy"}]
 execute if score @s Akit matches 1..8 run function kit:attack/give
 execute if score @s Dkit matches 11..18 run function kit:defense/give
 execute if score @s Skit matches 21..28 run function kit:support/give
