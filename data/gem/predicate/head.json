@@ -4,9 +4,9 @@
 	"predicate": {
 		"type": "minecraft:player",
 		"equipment": {
-		"head": {
-			"items": [
-			"minecraft:diamond"
+			"head": {
+				"items": [
+					"minecraft:diamond"
 				]
 			}
 		}

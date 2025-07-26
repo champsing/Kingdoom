@@ -1,14 +1,11 @@
 {
 	"condition": "minecraft:any_of",
-	"terms":
-	[
+	"terms": [
 		{
 			"condition": "minecraft:entity_scores",
 			"entity": "this",
-			"scores":
-			{
-				"marry_ask_red":
-				{
+			"scores": {
+				"marry_ask_red": {
 					"min": 1
 				}
 			}
@@ -16,10 +13,8 @@
 		{
 			"condition": "minecraft:entity_scores",
 			"entity": "this",
-			"scores":
-			{
-				"marry_ask_blue":
-				{
+			"scores": {
+				"marry_ask_blue": {
 					"min": 1
 				}
 			}

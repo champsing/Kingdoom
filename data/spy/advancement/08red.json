@@ -3,9 +3,9 @@
 		"red_guardian": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
-			"entity": {
-				"type": "minecraft:skeleton",
-				"nbt": "{Tags:[\"Rguardian\"]}"
+				"entity": {
+					"type": "minecraft:skeleton",
+					"nbt": "{Tags:[\"Rguardian\"]}"
 				}
 			}
 		}

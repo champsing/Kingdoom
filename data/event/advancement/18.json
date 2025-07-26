@@ -1,17 +1,17 @@
 {
 	"criteria": {
-	  "event18": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "player": {
-			"nbt": "{Tags:[\"event18\"]}"
-		  },
-		  "entity": {
-			"type": "minecraft:player",
-			"nbt": "{Tags:[\"event18\"]}"
-		  }
+		"event18": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": {
+					"nbt": "{Tags:[\"event18\"]}"
+				},
+				"entity": {
+					"type": "minecraft:player",
+					"nbt": "{Tags:[\"event18\"]}"
+				}
+			}
 		}
-	  }
 	},
 	"rewards": {
 		"function": "event:success/18"

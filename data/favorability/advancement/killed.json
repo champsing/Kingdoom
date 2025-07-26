@@ -1,16 +1,16 @@
 {
 	"criteria": {
-	  "fav_killed": {
-		"trigger": "minecraft:entity_killed_player",
-		"conditions": {
-		  "player": {
-			"type": "minecraft:player"
-		  },
-		  "entity": {
-			"type": "minecraft:player"
-		  }
+		"fav_killed": {
+			"trigger": "minecraft:entity_killed_player",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player"
+				},
+				"entity": {
+					"type": "minecraft:player"
+				}
+			}
 		}
-	  }
 	},
 	"rewards": {
 		"function": "favorability:effect/killed"

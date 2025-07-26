@@ -308,7 +308,7 @@
 									"Invulnerable": true,
 									"Invisible": true,
 									"PersistenceRequired": true,
-									"Tags":["landmine_point"]
+									"Tags": ["landmine_point"]
 								}
 							}
 						}
