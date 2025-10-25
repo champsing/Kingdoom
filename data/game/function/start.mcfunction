@@ -2,7 +2,6 @@
 gamerule doDaylightCycle true
 gamerule fallDamage true
 gamerule reducedDebugInfo true
-gamerule locatorBar false
 
 #---效果---
 clear @a

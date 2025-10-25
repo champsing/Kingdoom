@@ -52,6 +52,5 @@ gamerule logAdminCommands true
 gamerule reducedDebugInfo false
 gamerule sendCommandFeedback true
 gamerule spawnRadius 10
-gamerule locatorBar true
 
 clear @a
