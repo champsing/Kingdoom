@@ -1,6 +1,6 @@
 playsound ui.button.click ambient @s ~ ~ ~
 
-execute unless data entity @s Inventory[{Slot:-106b}] run function favorability:gift/fail/item
+execute unless items entity @s weapon.offhand * run function favorability:gift/fail/item
 execute if entity @s[tag=gift_asking] run function favorability:gift/fail/self_ask
 execute if entity @s[predicate=favorability:scores/gift_feedback] run function favorability:gift/fail/self_feedback
 

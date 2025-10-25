@@ -1,5 +1,5 @@
 loot spawn ~ ~ ~ loot edit:name
-data modify entity @s ArmorItems[0].components.minecraft:custom_name set from entity @e[type=item,limit=1,nbt={Item:{components:{"minecraft:custom_data":{name:2}}}}] Item.components.minecraft:custom_name
+data modify entity @s equipment.feet.components.minecraft:custom_name set from entity @e[type=item,limit=1,nbt={Item:{components:{"minecraft:custom_data":{name:2}}}}] Item.components.minecraft:custom_name
 kill @e[type=item,limit=1,nbt={Item:{components:{"minecraft:custom_data":{name:2}}}}]
 
 execute store result entity @s Pos[0] double 1 run scoreboard players get @s curx

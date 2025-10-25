@@ -1,4 +1,4 @@
-data modify entity @s Team set from entity @s ArmorItems[3].components.minecraft:custom_data.team
+data modify entity @s Team set from entity @s equipment.head.components.minecraft:custom_data.team
 data merge entity @s {CustomName:"",CustomNameVisible:0b}
 playsound ui.button.click ambient @p ~ ~ ~
 execute if entity @s[tag=kingspawn] run function edit:count/kingspawn

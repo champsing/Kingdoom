@@ -18,6 +18,7 @@ gamerule logAdminCommands false
 gamerule reducedDebugInfo false
 gamerule sendCommandFeedback false
 gamerule spawnRadius 0
+gamerule locatorBar true
 
 team add red "紅隊"
 team add blue "藍隊"

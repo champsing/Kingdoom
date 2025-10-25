@@ -1,2 +1,2 @@
-summon armor_stand ~ ~-0.675 ~ {Tags:["landmine"],NoGravity:1b,Small:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"stone_pressure_plate",count:1}],DisabledSlots:63,PortalCooldown:100}
+summon armor_stand ~ ~-0.675 ~ {Tags:["landmine"],NoGravity:1b,Small:1b,Invisible:1b,Invulnerable:1b,equipment:{head:{id:"stone_pressure_plate",count:1}},DisabledSlots:63,PortalCooldown:100}
 kill @s

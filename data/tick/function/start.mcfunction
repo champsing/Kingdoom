@@ -73,9 +73,9 @@ execute unless score 藍隊守衛 list2 = 藍隊守衛 team_upgrade run function
 
 #---鍛造---
 execute at @e[tag=forge] if block ~ ~ ~ end_portal_frame[eye=true] unless entity @e[type=armor_stand,tag=forge_sword,distance=..0.5,limit=1] run summon armor_stand ~-0.22 ~0.2 ~0.05 {Tags:["forge_sword"],Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,DisabledSlots:62,Pose:{RightArm:[81f,90f,0f]}}
-execute at @e[tag=forge,team=red_edit] if block ~ ~ ~ end_portal_frame[eye=true] as @e[type=armor_stand,tag=forge_sword,tag=!forge_success,distance=..0.5,limit=1] if data entity @s HandItems[0].components.minecraft:custom_data.forge unless entity @s[nbt={HandItems:[{components:{"minecraft:custom_data":{forge:3}}}]}] run function forge:success_red
-execute at @e[tag=forge,team=blue_edit] if block ~ ~ ~ end_portal_frame[eye=true] as @e[type=armor_stand,tag=forge_sword,tag=!forge_success,distance=..0.5,limit=1] if data entity @s HandItems[0].components.minecraft:custom_data.forge unless entity @s[nbt={HandItems:[{components:{"minecraft:custom_data":{forge:3}}}]}] run function forge:success_blue
-execute as @e[type=armor_stand,tag=forge_success] at @s unless data entity @s HandItems[0].id run function forge:success
+execute at @e[tag=forge,team=red_edit] if block ~ ~ ~ end_portal_frame[eye=true] as @e[type=armor_stand,tag=forge_sword,tag=!forge_success,distance=..0.5,limit=1] if data entity @s equipment.mainhand.components.minecraft:custom_data.forge unless items entity @s weapon.mainhand *[minecraft:custom_data~{forge:3}] run function forge:success_red
+execute at @e[tag=forge,team=blue_edit] if block ~ ~ ~ end_portal_frame[eye=true] as @e[type=armor_stand,tag=forge_sword,tag=!forge_success,distance=..0.5,limit=1] if data entity @s equipment.mainhand.components.minecraft:custom_data.forge unless items entity @s weapon.mainhand *[minecraft:custom_data~{forge:3}] run function forge:success_blue
+execute as @e[type=armor_stand,tag=forge_success] at @s unless data entity @s equipment.mainhand.id run function forge:success
 clear @a[team=!spec] #upgrade:weapon[repair_cost=1,custom_data~{NoGrind:1b}]
 
 #---技能---

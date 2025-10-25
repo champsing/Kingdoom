@@ -1,3 +1,3 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1b},Tags:["gem_head"]}
-data modify entity @e[type=item,limit=1,distance=..0.3,tag=gem_head] Item set from entity @s Inventory[{Slot:103b}]
+summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},Tags:["gem_head"]}
+item replace entity @e[type=item,limit=1,distance=..0.3,tag=gem_head] contents from entity @s armor.head
 tag @e[tag=gem_head] remove gem_head

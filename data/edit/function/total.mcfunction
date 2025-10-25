@@ -72,7 +72,7 @@ execute if score 最大值 border_z = 最大值 border_z run tellraw @s ["",{"te
 execute if score 最小值 border_z = 最小值 border_z run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"地圖Z軸最小邊界: ","color":"gold"},{"score":{"name":"最小值","objective":"border_z"}}]
 
 tellraw @s {"text":"——————————————————","bold":true,"color":"gold"}
-execute as @e[tag=build,tag=!build_setting] run data modify entity @s CustomName set from entity @s ArmorItems[0].components.minecraft:custom_name
+execute as @e[tag=build,tag=!build_setting] run data modify entity @s CustomName set from entity @s equipment.feet.components.minecraft:custom_name
 
 execute as @e[tag=build,tag=!build_setting] run scoreboard players operation @s build_operation = @s build_score
 execute as @e[tag=build,tag=!build_setting] run scoreboard players operation @s build_operation *= 建築分數 menu

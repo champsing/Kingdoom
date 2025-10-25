@@ -1,3 +1,3 @@
-execute if entity @s[nbt={HandItems:[{components:{"minecraft:custom_data":{forge:2}}}]}] if score 藍隊鍛造台 team_upgrade matches 3 run function forge:level/3
-execute if entity @s[nbt={HandItems:[{components:{"minecraft:custom_data":{forge:1}}}]}] if score 藍隊鍛造台 team_upgrade matches 2.. run function forge:level/2
-execute if entity @s[nbt={HandItems:[{components:{"minecraft:custom_data":{forge:0}}}]}] if score 藍隊鍛造台 team_upgrade matches 1.. run function forge:level/1
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{forge:2}] if score 藍隊鍛造台 team_upgrade matches 3 run function forge:level/3
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{forge:1}] if score 藍隊鍛造台 team_upgrade matches 2.. run function forge:level/2
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{forge:0}] if score 藍隊鍛造台 team_upgrade matches 1.. run function forge:level/1

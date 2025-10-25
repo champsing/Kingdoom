@@ -45,12 +45,12 @@ scoreboard players operation @s sizex2 = @s sizex
 scoreboard players operation @s sizey2 = @s sizey
 scoreboard players operation @s sizez2 = @s sizez
 scoreboard players set @s build_score 0
-execute if data entity @s ArmorItems[1].components.minecraft:custom_data.name run data modify storage build:number number prepend from entity @s ArmorItems[1].components.minecraft:custom_data.name
+execute if data entity @s equipment.legs.components.minecraft:custom_data.name run data modify storage build:number number prepend from entity @s equipment.legs.components.minecraft:custom_data.name
 setblock ~ ~ ~ structure_block[mode=save]{ignoreEntities:1b,mode:"SAVE",posX:0,posY:0,posZ:0,sizeX:0,sizeY:0,sizeZ:0,showair:0b,showboundingbox:1b}
 
 data modify block ~ ~ ~ name set from storage build:number number[0].name
 data remove storage build:number number[0]
-data modify entity @s ArmorItems[1].components.minecraft:custom_data.name set from block ~ ~ ~ name
+data modify entity @s equipment.legs.components.minecraft:custom_data.name set from block ~ ~ ~ name
 
 execute store result block ~ ~ ~ posX int 1 run scoreboard players get relx build
 execute store result block ~ ~ ~ posY int 1 run scoreboard players get rely build

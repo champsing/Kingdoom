@@ -5,8 +5,8 @@ tag @a[tag=Bking,team=!blue] remove Bking
 execute unless entity @a[tag=Rking] run tag @r[team=red] add Rking
 execute unless entity @a[tag=Bking] run tag @r[team=blue] add Bking
 
-item replace entity @a[team=red,tag=Rking] armor.head with golden_helmet[custom_name={"text":"皇冠","italic":false},unbreakable={show_in_tooltip:0b},enchantments={levels:{"minecraft:binding_curse":1,"minecraft:vanishing_curse":1},show_in_tooltip:0b}]
-item replace entity @a[team=blue,tag=Bking] armor.head with golden_helmet[custom_name={"text":"皇冠","italic":false},unbreakable={show_in_tooltip:0b},enchantments={levels:{"minecraft:binding_curse":1,"minecraft:vanishing_curse":1},show_in_tooltip:0b}]
+item replace entity @a[team=red,tag=Rking] armor.head with golden_helmet[custom_name={"text":"皇冠","italic":false},unbreakable={},enchantments={"minecraft:binding_curse":1,"minecraft:vanishing_curse":1},tooltip_display={hidden_components:["unbreakable","enchantments"]}]
+item replace entity @a[team=blue,tag=Bking] armor.head with golden_helmet[custom_name={"text":"皇冠","italic":false},unbreakable={},enchantments={"minecraft:binding_curse":1,"minecraft:vanishing_curse":1},tooltip_display={hidden_components:["unbreakable","enchantments"]}]
 
 bossbar set red name ["",{"text":"紅隊國王: ","color":"red"},{"selector":"@a[tag=Rking]"}]
 bossbar set blue name ["",{"text":"藍隊國王: ","color":"blue"},{"selector":"@a[tag=Bking]"}]

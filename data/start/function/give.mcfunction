@@ -7,8 +7,8 @@ give @s armor_stand[custom_name={"text":"鍛造台","color":"gold","italic":fals
 give @s armor_stand[custom_name={"text":"中央點","color":"gold","italic":false},entity_data={id:"armor_stand",NoGravity:1b,Glowing:1b,Invisible:1b,Tags:["middle","editing","middle_one","align"]}]
 give @s armor_stand[custom_name={"text":"遠古遺骸","color":"gold","italic":false},entity_data={id:"armor_stand",NoGravity:1b,Glowing:1b,Small:1b,Invisible:1b,Tags:["ancient_debris","editing"]}]
 
-give @s command_block[custom_name={"text":"可拆建築物點A","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:summon armor_stand ~ ~-0.5 ~ {ArmorItems:[{id:"minecraft:barrier",count:1b},{id:"minecraft:barrier",count:1b},{},{}],DisabledSlots:6,Invisible:1b,Glowing:1b,NoGravity:1b,Tags:["Abuild","team","editing"],CustomNameVisible:1b,CustomName:\{"text":"建築物尚未設定隊伍"}\}}]
-give @s command_block[custom_name={"text":"可拆建築物點B","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:summon armor_stand ~ ~-0.5 ~ {NoGravity:1b,Invisible:1b,Tags:["Bbuild"]}}]
+give @s command_block[custom_name={"text":"可拆建築物點A","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:'summon armor_stand ~ ~-0.5 ~ {equipment:{feet:{id:"minecraft:barrier",count:1},legs:{id:"minecraft:barrier",count:1}},DisabledSlots:6,Invisible:1b,Glowing:1b,NoGravity:1b,Tags:["Abuild","team","editing"],CustomNameVisible:1b,CustomName:{"text":"建築物尚未設定隊伍"}}'}]
+give @s command_block[custom_name={"text":"可拆建築物點B","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:'summon armor_stand ~ ~-0.5 ~ {NoGravity:1b,Invisible:1b,Tags:["Bbuild"]}'}]
 
 give @s armor_stand[custom_name={"text":"屠夫","color":"gold","italic":false},entity_data={id:"armor_stand",NoGravity:1b,Glowing:1b,Invisible:1b,Tags:["butcher","villager","editing","align"],CustomNameVisible:1b,CustomName:{"text":"屠夫"}}]
 give @s armor_stand[custom_name={"text":"製箭師","color":"gold","italic":false},entity_data={id:"armor_stand",NoGravity:1b,Glowing:1b,Invisible:1b,Tags:["fletcher","villager","editing","align"],CustomNameVisible:1b,CustomName:{"text":"製箭師"}}]
@@ -29,7 +29,7 @@ give @s item_frame[custom_name={"text":"10元提款機","color":"gold","italic":
 give @s item_frame[custom_name={"text":"25元提款機","color":"gold","italic":false},entity_data={id:"item_frame",Tags:["atm_frame","atm2_frame"],Invulnerable:1b,Invisible:1b}]
 give @s item_frame[custom_name={"text":"50元提款機","color":"gold","italic":false},entity_data={id:"item_frame",Tags:["atm_frame","atm3_frame"],Invulnerable:1b,Invisible:1b}]
 
-give @s command_block[custom_name={"text":"場地邊界A點","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["border_a"]}}]
-give @s command_block[custom_name={"text":"場地邊界B點","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["border_b"]}}]
+give @s command_block[custom_name={"text":"場地邊界A點","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:'summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["border_a"]}'}]
+give @s command_block[custom_name={"text":"場地邊界B點","color":"gold","italic":false},block_entity_data={id:"command_block",auto:1b,Command:'summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["border_b"]}'}]
 
 give @s writable_book[custom_name={"text":"命名建築物","color":"gold","italic":false},writable_book_content={pages:["點擊下方「署名」，輸入建築物名字，點擊「署名並完成」"]},custom_data={name:1}]

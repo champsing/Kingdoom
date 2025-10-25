@@ -1,3 +1,3 @@
-summon item ~ ~ ~ {Tags:["Bgem"],Age:-32768,CustomNameVisible:1b,Invulnerable:1b,Glowing:1b,PickupDelay:50,CustomName:{"text":"藍隊寶石","color":"blue"},Item:{id:"minecraft:diamond",count:1b,components:{"minecraft:repair_cost":100,"minecraft:custom_name":{"text":"藍隊寶石","color":"blue","italic":false},"minecraft:custom_data":{team:"blue"}}}}
+summon item ~ ~ ~ {Tags:["Bgem"],Age:-32768,CustomNameVisible:1b,Invulnerable:1b,Glowing:1b,PickupDelay:50,CustomName:{"text":"藍隊寶石","color":"blue"},Item:{id:"minecraft:diamond",count:1,components:{"minecraft:repair_cost":100,"minecraft:custom_name":{"text":"藍隊寶石","color":"blue","italic":false},"minecraft:custom_data":{team:"blue"}}}}
 team join blue @e[type=item,tag=Bgem,distance=..1]
 tag @s remove Bgem_player
