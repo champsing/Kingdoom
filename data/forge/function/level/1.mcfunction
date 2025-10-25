@@ -17,19 +17,19 @@ execute if score @s forge matches 12 run data modify entity @s equipment.mainhan
 execute if score @s forge matches 13 run data modify entity @s equipment.mainhand.components merge value {"minecraft:custom_data":{ForgeAttack:1,ForgeEffect:"soul"},"minecraft:lore":[{"text":"§a招魂 I"},{"text":"§a殺死玩家後有25%機率吸收1個靈魂"}]}
 execute if score @s forge matches 14 run data modify entity @s equipment.mainhand.components merge value {"minecraft:custom_data":{ForgeAttack:1,ForgeEffect:"looting"},"minecraft:lore":[{"text":"§a聚寶 I"},{"text":"§a殺死玩家後有25%機率掉落隨機物品"}]}
 execute if score @s forge matches 15 run data modify entity @s equipment.mainhand.components merge value {"minecraft:lore":[{"text":"§a速斬 I"},{"text":"§a拿在主手增加0.5攻擊速度"}],"minecraft:custom_data":{ForgeEffect:"slash"}}
-execute if score @s forge matches 15 store result score 攻擊速度 forge run data get entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers[{type:"minecraft:attack_speed"}].amount 10
+execute if score @s forge matches 15 store result score 攻擊速度 forge run data get entity @s equipment.mainhand.components.minecraft:attribute_modifiers[{type:"minecraft:attack_speed"}].amount 10
 execute if score @s forge matches 15 run scoreboard players add 攻擊速度 forge 5
-execute if score @s forge matches 15 store result entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers[{type:"minecraft:attack_speed"}].amount double 0.1 run scoreboard players get 攻擊速度 forge
+execute if score @s forge matches 15 store result entity @s equipment.mainhand.components.minecraft:attribute_modifiers[{type:"minecraft:attack_speed"}].amount double 0.1 run scoreboard players get 攻擊速度 forge
 execute if score @s forge matches 16 run data modify entity @s equipment.mainhand.components merge value {"minecraft:lore":[{"text":"§a延壽 I"},{"text":"§a拿在主手增加25%生命值"}],"minecraft:custom_data":{ForgeEffect:"health"}}
-execute if score @s forge matches 16 run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers append value {type:"minecraft:max_health",amount:0.25,operation:"add_multiplied_base",id:"ffffffff-ffff-ffff-ffff-ffffffffffff",slot:"mainhand"}
+execute if score @s forge matches 16 run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers append value {type:"minecraft:max_health",amount:0.25,operation:"add_multiplied_base",id:"ffffffff-ffff-ffff-ffff-ffffffffffff",slot:"mainhand"}
 execute if score @s forge matches 17 run data modify entity @s equipment.mainhand.components merge value {"minecraft:lore":[{"text":"§a防禦 I"},{"text":"§a拿在主手增加2防禦值"}],"minecraft:custom_data":{ForgeEffect:"defense"}}
-execute if score @s forge matches 17 run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers append value {type:"minecraft:armor",amount:2,operation:"add_value",id:"ffffffff-ffff-ffff-ffff-ffffffffffff",slot:"mainhand"}
+execute if score @s forge matches 17 run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers append value {type:"minecraft:armor",amount:2,operation:"add_value",id:"ffffffff-ffff-ffff-ffff-ffffffffffff",slot:"mainhand"}
 execute if score @s forge matches 18 run data modify entity @s equipment.mainhand.components merge value {"minecraft:lore":[{"text":"§a鋒利 I"},{"text":"§a拿在主手增加1攻擊傷害"}],"minecraft:custom_data":{ForgeEffect:"sharpness"}}
-execute if score @s forge matches 18 store result score 攻擊力 forge run data get entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers[{type:"minecraft:attack_damage"}].amount
+execute if score @s forge matches 18 store result score 攻擊力 forge run data get entity @s equipment.mainhand.components.minecraft:attribute_modifiers[{type:"minecraft:attack_damage"}].amount
 execute if score @s forge matches 18 run scoreboard players add 攻擊力 forge 1
-execute if score @s forge matches 18 store result entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers[{type:"minecraft:attack_damage"}].amount double 1 run scoreboard players get 攻擊力 forge
+execute if score @s forge matches 18 store result entity @s equipment.mainhand.components.minecraft:attribute_modifiers[{type:"minecraft:attack_damage"}].amount double 1 run scoreboard players get 攻擊力 forge
 execute if score @s forge matches 19 run data modify entity @s equipment.mainhand.components merge value {"minecraft:lore":[{"text":"§a輕盈 I"},{"text":"§a拿在主手增加20%移動速度"}],"minecraft:custom_data":{ForgeEffect:"speed"}}
-execute if score @s forge matches 19 run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers.modifiers append value {type:"minecraft:movement_speed",amount:0.2,operation:"add_multiplied_base",id:"ffffffff-ffff-ffff-ffff-ffffffffffff",slot:"mainhand"}
+execute if score @s forge matches 19 run data modify entity @s equipment.mainhand.components.minecraft:attribute_modifiers append value {type:"minecraft:movement_speed",amount:0.2,operation:"add_multiplied_base",id:"ffffffff-ffff-ffff-ffff-ffffffffffff",slot:"mainhand"}
 
 data modify entity @s equipment.mainhand.components merge value {"minecraft:repair_cost":99,"minecraft:enchantments":{"minecraft:binding_curse":1},tooltip_display:{hidden_components:["enchantments"]},"minecraft:custom_data":{NoGrind:1b,forge:1}}
 scoreboard players reset @s forge

@@ -8,5 +8,5 @@ execute as @a[team=red] store result score @s Rnumber run scoreboard players add
 execute as @a[team=blue] store result score @s Bnumber run scoreboard players add 玩家編號 Bnumber 1
 
 #---任務---
-execute at @e[type=area_effect_cloud,tag=lobby,limit=1] run summon area_effect_cloud ~ ~ ~ {Duration:2147483647,Tags:["spy"]}
+execute at @e[type=area_effect_cloud,tag=lobby,limit=1] run summon area_effect_cloud ~ ~ ~ {WaitTime:0,Radius:0f,Duration:2147483647,Tags:["spy"]}
 execute as @e[type=area_effect_cloud,tag=spy,limit=1] run function spy:random

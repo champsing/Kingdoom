@@ -1,6 +1,6 @@
 forceload add ~ ~
 setworldspawn ~ ~ ~
-execute align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Duration:2147483647,Tags:["lobby","edit_mode"]}
+execute align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {WaitTime:0,Radius:0f,Duration:2147483647,Tags:["lobby","edit_mode"]}
 function start:lobby
 function start:install
 
